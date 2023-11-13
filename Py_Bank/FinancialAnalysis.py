@@ -1,7 +1,7 @@
 import os
 import csv
 
-csv_path = r'Resources\budget_data.csv'
+csv_path = r'Py_Bank\Resources\budget_data.csv'
 
 
 change_in_profits = []
@@ -42,8 +42,9 @@ print(f"Average Change: ${round(sum(change_in_profits)/len(change_in_profits), 2
 print(f"Greatest Increase in Profits: {dates[change_in_profits.index(maximum_average) + 1]} (${maximum_average})")
 print(f"Greatest Decrease in Profits: {dates[change_in_profits.index(minimum_average) + 1]} (${minimum_average})")
 
-
-with open('Financial_Ouptut.txt', 'w', newline='') as f:
+Financial_Output_Path = r'C:\Users\qwert\Documents\GitHub\Python-Challenge\Py_Bank\Resources'
+final_Output = os.path.join(Financial_Output_Path, "Financial_Output.txt")
+with open(final_Output, 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Financial Analysis'])
     writer.writerow(['--------------------------'])
