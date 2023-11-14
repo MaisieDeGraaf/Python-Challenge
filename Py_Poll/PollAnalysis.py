@@ -37,12 +37,10 @@ with open(csv_path, 'r') as csvfile:
             Candidate_Votes_3 = Candidate_Votes_3 + 1
 
     Individual_Votes = [Candidate_Votes_1, Candidate_Votes_2, Candidate_Votes_3]
-# The percentage of votes each candidate won
+
     
     winner_votes = max(Individual_Votes)
-    # for winner in Individual_Votes:
-    #     if winner > winner_votes:
-    #         winner_votes = winner
+
 
 
 print("Election Results")
