@@ -1,4 +1,5 @@
 # Python-Challenge
+
 Py_Bank Financial Analysis
 This Python script analyzes financial data from a CSV file containing date and profit/loss columns.
 
@@ -27,3 +28,28 @@ Average of the changes in "Profit/Losses" over the entire period.
 Greatest increase in profits with the corresponding date.
 Greatest decrease in profits with the corresponding date.
 Additionally, it generates a Financial_Output.txt file containing the same information for further reference.
+
+Py_Poll Analysis
+Description
+The script election_analysis.py takes data from the election_data.csv file located in the Py_Poll/Resources directory. It calculates the total number of votes cast, the percentage of votes and total votes each candidate received, and determines the winner based on the popular vote.
+
+How to Use
+Prerequisites
+Python 3.x
+CSV file named election_data.csv containing columns: Ballot ID, Country, Candidate
+Instructions
+Clone or download the repository to your local machine.
+Place the election_data.csv file inside the Py_Poll/Resources directory.
+Run the script election_analysis.py.
+bash
+Copy code
+python election_analysis.py
+View the election analysis results displayed in the console.
+The script will generate a Poll_Output.txt file in the Py_Poll/Resources directory containing the same analysis output.
+Output
+The script will display the following information in the console:
+
+Total votes cast in the election.
+Percentage of votes and total votes received by each candidate.
+The candidate with the highest number of votes, declared as the winner.
+Additionally, it generates a Poll_Output.txt file containing the same information for further reference.
